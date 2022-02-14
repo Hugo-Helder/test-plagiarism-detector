@@ -1,0 +1,15 @@
+name: Test PC action
+on: [push]
+
+jobs:
+  test-pc-action:
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: pc-action-hu
+      uses: hugo-helder/plagiaatcontrole-backend@v1.1
+      env:
+        PG_ASSIGNMENT_ID: 25923
