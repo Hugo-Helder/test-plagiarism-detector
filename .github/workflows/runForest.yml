@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: pc-action-hu
-      uses: hugo-helder/plagiaatcontrole-backend@v1.1
+      uses: hugo-helder/plagiaatcontrole-action@latest
       env:
         PG_ASSIGNMENT_ID: 25923
